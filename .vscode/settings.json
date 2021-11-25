@@ -1,0 +1,6 @@
+{
+  "vim.autoSwitchInputMethod.enable": true,
+"vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\im-select.exe", 
+  "vim.autoSwitchInputMethod.switchIMCmd": "C:\\im-select.exe {im} && C:\\im-select.exe 2052"
+}
