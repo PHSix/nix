@@ -38,7 +38,7 @@
 
 # nix表达式
 ## 函数式语言
-`nix`是一门函数式语言，这意味着它和`haskell`这种函数式编程语言很相像
+`nix`是一门函数式编程语言，这意味着它和`haskell`这种函数式编程语言很相像，具体的函数式带来的好处建议看MIT的公开课[计算机的解释与构造]()，或者自学haskell。
 
 TODO: grammer和expressions的区别
 
@@ -77,12 +77,6 @@ nix-repl> let a = 4; b = a + 5; in b
 9
 ```
 
-惰性带来的好处：
-TODO:
-```nix
-nix-repl> let a = 4; b = a + 5; in b
-9
-```
 TODO: Functions and Import
 
 # derivation
