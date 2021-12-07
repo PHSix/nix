@@ -1,5 +1,4 @@
-# 摘取自 https://github.com/bobby285271/nixos-config/blob/master/system/default.nix
-# 功能：加载当前目录下的所有配置文件
+# copy from https://hub.fastgit.org/bobby285271/nixos-config/blob/master/system/default.nix
 { pkgs, lib, ... }:
 
 let
