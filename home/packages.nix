@@ -2,11 +2,13 @@
 {
   home.packages = (with pkgs; [
     # development environment
+    gnumake
     python3Full
     nodejs
     go
     gcc
     gdb
+    rustup
     rustc
     cargo
     gopls
@@ -19,6 +21,13 @@
     rnix-lsp
     rust-analyzer
     sumneko-lua-language-server
+
+    # sql
+    sqlite
+    mysql57
+
+    # editor, ide, etc...
+    dbeaver
 
     # cli
     rsync
@@ -58,5 +67,11 @@
     vscode-json-languageserver
     lua-fmt
     prettier
+  ]) ++ (with pkgs.jetbrains; [
+    # jetbrains family bucket
+    goland
+    webstorm
+    pycharm-professional
+    idea-ultimiate
   ]);
 }
