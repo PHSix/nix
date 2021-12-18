@@ -24,7 +24,7 @@
 
     # sql
     sqlite
-    mysql57
+    # mysql57
 
     # editor, ide, etc...
     dbeaver
@@ -59,19 +59,21 @@
     # feh
     # picom
   ]) ++ (with pkgs.nodePackages; [
-    typescript
-    pyright
-    bash-language-server
-    typescript-language-server
-    vscode-css-languageserver-bin
-    vscode-json-languageserver
-    lua-fmt
-    prettier
+    # typescript
+    # pyright
+    # bash-language-server
+    # typescript-language-server
+    # vscode-css-languageserver-bin
+    # vscode-json-languageserver
+    # lua-fmt
+    # prettier
   ]) ++ (with pkgs.jetbrains; [
     # jetbrains family bucket
     goland
     webstorm
     pycharm-professional
     idea-ultimiate
+  ]) + (with pkgs.python39Packages; [
+
   ]);
 }
