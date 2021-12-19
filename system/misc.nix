@@ -7,6 +7,7 @@
     openssh.enable = true;
     /* gnome-keyring = true; */
     xserver = {
+      videoDrivers = [ "nvidia" ];
       enable = true;
       displayManager.gdm.enable = true;
       displayManager.gdm.wayland = false;

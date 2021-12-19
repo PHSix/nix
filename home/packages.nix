@@ -13,6 +13,8 @@
     cargo
     gopls
     cmake
+    jdk11
+    # tomcat9
     # llvmPackages_13.clang
     clang-tools
     # language server
@@ -24,7 +26,7 @@
 
     # sql
     sqlite
-    # mysql57
+    mycli
 
     # editor, ide, etc...
     dbeaver

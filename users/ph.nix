@@ -6,6 +6,7 @@
         "wheel" 
         "docker"
         "adbusers"
+        "mysql"
       ];
       shell = pkgs.fish;
   };
