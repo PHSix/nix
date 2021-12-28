@@ -2,6 +2,8 @@
 {
   home.packages = (with pkgs; [
     # development environment
+    dart
+    flutter
     gnumake
     python3Full
     nodejs
@@ -30,6 +32,8 @@
 
     # editor, ide, etc...
     dbeaver
+    postman
+    oni2
 
     # cli
     rsync
