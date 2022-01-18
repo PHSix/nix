@@ -18,6 +18,7 @@ let
     formulahendry.auto-close-tag
     zhuangtongfa.material-theme
     pkief.material-icon-theme
+    ms-vscode.cpptools
   ]) ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     # volar
   ];

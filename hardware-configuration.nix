@@ -21,19 +21,20 @@
   #   "nouveau"
   # ];
 
-    fileSystems."/" =
-  { device = "/dev/disk/by-uuid/edd8ea63-ba93-414b-81e3-759751a362d2";
-  fsType = "ext4";
-};
+  fileSystems."/" =
+    {
+      device = "/dev/disk/by-uuid/edd8ea63-ba93-414b-81e3-759751a362d2";
+      fsType = "ext4";
+    };
 
-fileSystems."/boot" =
-{ device = "/dev/disk/by-uuid/472B-C32D";
-fsType = "vfat";
-};
+  fileSystems."/boot" =
+    {
+      device = "/dev/disk/by-uuid/472B-C32D";
+      fsType = "vfat";
+    };
 
-swapDevices =
-[ { device = "/dev/disk/by-uuid/02829387-2c88-400e-94ca-f08260fc4b50"; }
-];
+  swapDevices =
+    [{ device = "/dev/disk/by-uuid/02829387-2c88-400e-94ca-f08260fc4b50"; }];
 
-powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 }

@@ -7,7 +7,6 @@
     openssh.enable = true;
     /* gnome-keyring = true; */
     xserver = {
-      videoDrivers = [ "nvidia" ];
       enable = true;
       displayManager.gdm.enable = true;
       displayManager.gdm.wayland = false;
@@ -33,7 +32,7 @@
   hardware.pulseaudio.enable = true;
   system = {
     autoUpgrade.enable = true;
-    stateVersion = "21.05";
+    stateVersion = "21.11";
   };
   environment.systemPackages = (with pkgs.gnomeExtensions; [
     cpufreq
@@ -44,6 +43,7 @@
     removable-drive-menu
     hide-top-bar
     appindicator
+    gsconnect
   ]) ++ (with pkgs.gnome; [
     gnome-tweaks
     gnome-boxes

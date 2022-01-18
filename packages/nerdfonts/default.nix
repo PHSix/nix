@@ -12,7 +12,9 @@
 
 let
   # both of these files are generated via ./update.sh
+  # git_mirror = "github.com";
   git_mirror = "hub.fastgit.org";
+  # git_mirror = "https://github.com.cnpmjs.org";
   version = "2.1.0";
   fontsShas = import ./shas.nix;
   knownFonts = builtins.attrNames fontsShas;

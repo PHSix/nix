@@ -1,4 +1,4 @@
-{ home, config, pkgs, ... }:
+{ home, config, pkgs, nur, ... }:
 {
   home.packages = (with pkgs; [
     # development environment
@@ -10,12 +10,11 @@
     go
     gcc
     gdb
+    # rustc
+    # cargo
     rustup
-    rustc
-    cargo
     gopls
     cmake
-    jdk11
     # tomcat9
     # llvmPackages_13.clang
     clang-tools
@@ -31,9 +30,9 @@
     mycli
 
     # editor, ide, etc...
+    android-studio
     dbeaver
     postman
-    oni2
 
     # cli
     rsync
@@ -51,6 +50,8 @@
     tokei
     yarn
     gofumpt
+    python39Packages.pip
+    netease-music-tui
 
     # app
     google-chrome
@@ -58,6 +59,13 @@
     wezterm
     flameshot
     tdesktop
+    emacs
+    obs-studio
+    
+    # embedded development
+    openocd
+    
+
     # xfce.xfce4-clipman-plugin
 
     # window manager
@@ -74,12 +82,12 @@
     # lua-fmt
     # prettier
   ]) ++ (with pkgs.jetbrains; [
-    # jetbrains family bucket
     goland
     webstorm
     pycharm-professional
-    idea-ultimiate
-  ]) + (with pkgs.python39Packages; [
-
+    idea-ultimate
+  ]) ++ (with pkgs.nur; [
+    repos.linyinfeng.trojan
+    repos.linyinfeng.icalingua
   ]);
 }
