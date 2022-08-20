@@ -3,7 +3,7 @@
   programs.git = {
     enable = true;
     userName = "PH";
-    userEmail = "15917977183@163.com";
+    userEmail = "chenyi.ph@outlook.com";
     /* signing = { */
     /*   key = "15917977183@163.com"; */
     /*   signByDefault = true; */

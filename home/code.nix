@@ -8,17 +8,25 @@ let
 
   };
   extensions = (with pkgs.vscode-extensions; [
+    # fontend
+    dbaeumer.vscode-eslint
+    esbenp.prettier-vscode
+
+    # editor motion
     vscodevim.vim
-    svelte.svelte-vscode
+    formulahendry.auto-rename-tag
+
+    # language
     golang.go
     matklad.rust-analyzer
-    mskelton.one-dark-theme
     ms-python.vscode-pylance
-    formulahendry.auto-rename-tag
-    formulahendry.auto-close-tag
+    ms-vscode.cpptools
+    jnoortheen.nix-ide
+
+    # theme
+    mskelton.one-dark-theme
     zhuangtongfa.material-theme
     pkief.material-icon-theme
-    ms-vscode.cpptools
   ]) ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     # volar
   ];

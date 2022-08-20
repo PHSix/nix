@@ -3,14 +3,16 @@
 {
   services = {
     # power-profiles-daemon.enable = true;
-    # tlp.enable = true;
+    tlp.enable = true;
     openssh.enable = true;
-    /* gnome-keyring = true; */
+    gnome-keyring = true;
     xserver = {
       enable = true;
       displayManager.gdm.enable = true;
       displayManager.gdm.wayland = false;
-      desktopManager.gnome.enable = true;
+      desktopManager = {
+        # gnome.enable = true;
+      };
       windowManager = {
         i3 = {
           enable = true;
@@ -23,6 +25,9 @@
         awesome = {
           enable = true;
         };
+        bspwm = {
+          enable = true;
+        };
       };
       layout = "us";
       xkbOptions = "caps:escape";
@@ -32,7 +37,7 @@
   hardware.pulseaudio.enable = true;
   system = {
     autoUpgrade.enable = true;
-    stateVersion = "21.11";
+    stateVersion = "22.05";
   };
   environment.systemPackages = (with pkgs.gnomeExtensions; [
     cpufreq

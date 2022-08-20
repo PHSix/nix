@@ -38,7 +38,6 @@
     rsync
     netease-music-tui
     starship
-    ranger
     fish
     zsh
     lazygit
@@ -50,44 +49,30 @@
     tokei
     yarn
     gofumpt
-    python39Packages.pip
+    python310Packages.pip
     netease-music-tui
 
-    # app
-    google-chrome
-    kitty
-    wezterm
-    flameshot
-    tdesktop
-    emacs
-    obs-studio
-    
     # embedded development
     openocd
-    
 
     # xfce.xfce4-clipman-plugin
 
-    # window manager
-    # rofi
-    # feh
-    # picom
   ]) ++ (with pkgs.nodePackages; [
-    # typescript
-    # pyright
-    # bash-language-server
-    # typescript-language-server
-    # vscode-css-languageserver-bin
-    # vscode-json-languageserver
-    # lua-fmt
-    # prettier
+    typescript
+    pyright
+    bash-language-server
+    typescript-language-server
+    vscode-css-languageserver-bin
+    vscode-json-languageserver
+    lua-fmt
+    prettier
   ]) ++ (with pkgs.jetbrains; [
     goland
     webstorm
     pycharm-professional
     idea-ultimate
   ]) ++ (with pkgs.nur; [
-    repos.linyinfeng.trojan
-    repos.linyinfeng.icalingua
+    # repos.linyinfeng.trojan
+    # repos.linyinfeng.icalingua
   ]);
 }
